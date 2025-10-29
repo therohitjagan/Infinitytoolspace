@@ -1,0 +1,32 @@
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+from wordcloud import WordCloud
+import plotly.express as px
+
+# Heatmap
+data = np.random.randint(50, 100, (5, 5))
+df = pd.DataFrame(data, columns=["Math", "Science", "English", "History", "Art"])
+sns.heatmap(df.corr(), annot=True, cmap="coolwarm")
+plt.title("Heatmap")
+plt.show()
+
+# Word Cloud
+text = "python data science machine learning data visualization pandas numpy seaborn plotly dat science matplotlib ai analysis"
+
+wordcloud = WordCloud(background_color="white").generate(text)
+
+plt.imshow(wordcloud, interpolation="bilinear")
+plt.axis("off")
+plt.title("Word Cloud")
+plt.show()
+
+
+df2 = pd.DataFrame({
+    "Years": [2019, 2020, 2021, 2022, 2023],
+    "Sales": [200, 300, 250, 400, 350],
+    "Profit": [50, 100, 80, 120, 90]
+})
+
+ px.line(df2, x="Years", y=["Sales", "Profit"], title="Sales & Profit Over Years")

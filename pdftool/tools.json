@@ -1,0 +1,39 @@
+{
+    "tools": [
+        {
+            "name": "PDF Merger",
+            "description": "Combine multiple PDF documents into a single file",
+            "icon": "fas fa-object-group",
+            "url": "merge",
+            "image": "images/tools/merge.png"
+        },
+        {
+            "name": "PDF Splitter",
+            "description": "Split PDF files into separate pages or custom ranges",
+            "icon": "fas fa-cut",
+            "url": "split",
+            "image": "images/tools/split.png"
+        },
+        {
+            "name": "PDF Compressor",
+            "description": "Reduce file size while maintaining quality",
+            "icon": "fas fa-compress-alt",
+            "url": "compress",
+            "image": "images/tools/compress.png"
+        },
+        {
+            "name": "PDF to Image",
+            "description": "Convert PDF pages to JPG/PNG.",
+            "icon": "fas fa-images",
+            "url": "pdfimg",
+            "image": "images/tools/compress.png"
+        },
+        {
+            "name": "Image to PDF",
+            "description": "Upload JPG/PNG and merge into one PDF.",
+            "icon": "fas fa-file-pdf",
+            "url": "imgpdf",
+            "image": "images/tools/compress.png"
+        }
+    ]
+}

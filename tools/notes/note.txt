@@ -1,0 +1,13 @@
+// function calculate(a,b){
+//     return{
+//         sum: a + b,
+//         multiplication: a * b
+//     };
+// }
+// let result = calculate(3,4);
+// console.log("Sum:", result.sum);
+// console.log("Multiplication:", result.multiplication);
+
+function greet(Rohit){
+    return "hello," + Rohit;
+}

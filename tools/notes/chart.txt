@@ -1,0 +1,28 @@
+import plotly.express as px
+import pandas as pd
+
+# Creating dataset
+data = {
+    "Month": ["January"] * 3 + ["February"] * 3 + ["March"] * 3,
+    "Product": ["Product A", "Product B", "Product C"] * 3,
+    "Region": ["North", "South", "West"] * 3,
+    "Sales": [1200, 1500, 1100,  # January sales
+              1300, 1600, 1150,  # February sales
+              1400, 1700, 1200]  # March sales
+}
+
+df = pd.DataFrame(data)
+
+# Creating bar chart
+fig = px.bar(
+    df,
+    x="Month",
+    y="Sales",
+    color="Product",
+    barmode="group",
+    facet_col="Region",
+    title="Monthly Sales by Product and Region",
+    labels={"Sales": "Sales Amount ($)"}
+)
+
+fig.show()

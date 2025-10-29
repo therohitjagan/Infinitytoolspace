@@ -1,0 +1,10 @@
+import nltk
+from nltk.tokenize import word_tokenize
+
+
+text= "Rohit is a good boy. He is very smart and intelligent. He is 21 year old."
+
+
+word = word_tokenize(text)
+print("\nWord Tokenized: ")
+print(word)

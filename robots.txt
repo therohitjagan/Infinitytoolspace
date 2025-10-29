@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /tools/hiddentools/
+Disallow: /tools/notes/
+Disallow: /tools.json
+Disallow: /tools/cleanup.php
+Disallow: /tools/uploads
+
+Allow: /pdftool/
+

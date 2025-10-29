@@ -1,0 +1,28 @@
+import plotly.express as px
+import pandas as pd
+
+data = {
+    "month": ["January"] * 3 + ["February"] * 3 + ["March"] * 3,
+    "sales": [100, 150, 200, 250, 180, 220, 210, 190, 230],
+    "product": ["Product A", "Product B", "Product C"] * 3,
+    "region": ["North"] * 3 + ["South"] * 3 + ["West"] * 3
+}
+
+df = pd.DataFrame(data)
+
+df['sales_label'] = df['sales'].apply(lambda s: f"${s}")
+
+fig = px.bar(
+    df,
+    x="month",
+    y="sales",
+    color="product",
+    barmode="group",
+    facet_col="region",
+    title="Monthly Sales by Product and Region",
+    text="sales_label"
+)
+
+fig.update_traces(textposition='outside')
+
+fig.show()

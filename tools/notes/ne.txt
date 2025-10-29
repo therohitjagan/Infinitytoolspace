@@ -1,0 +1,20 @@
+@relation student_database
+
+@attribute StudentID numeric
+@attribute Name string
+@attribute Gender {Male,Female}
+@attribute Age numeric
+@attribute Grade {A,B,C,D,F}
+@attribute Attendance {High,Medium,Low}
+@attribute Result {Pass,Fail}
+
+@data
+1,'Amit',Male,20,A,High,Pass
+2,'Priya',Female,21,B,Medium,Pass
+3,'Rahul',Male,19,C,Low,Fail
+4,'Sneha',Female,22,A,High,Pass
+5,'Karan',Male,20,D,Medium,Fail
+6,'Anita',Female,21,B,High,Pass
+7,'Vikram',Male,23,F,Low,Fail
+8,'Meena',Female,19,C,Medium,Pass
+10,'Raja',Male,20,A,High,Pass

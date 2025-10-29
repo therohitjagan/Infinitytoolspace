@@ -1,0 +1,18 @@
+<?php
+$a = 1;
+$b = -6;
+$c = 5;
+
+$d = $b * $b - 4 * $a * $c;
+
+if($d > 0){
+    $root1 = (-$b + sqrt($d)) / (2 * $a);
+    echo "Roots are real and different: $root1";
+}elseif($d == 0){
+    $root1 = -$b / (2 * $a);
+    echo "Roots are real and same: $root1";
+}else{
+    echo "No real roots exist.";
+}
+
+?>

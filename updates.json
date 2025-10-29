@@ -1,0 +1,22 @@
+{
+    "updates": [
+      {
+        "version": "1.1.0",
+        "date": "2025-04-16",
+        "title": "New Tools Added",
+        "description": "We've added several new tools to enhance your productivity.",
+        "changes": [
+          "Added PDF to Word converter tool",
+          "Added Image compressor tool",
+          "Added Password generator tool",
+          "Improved tool search functionality",
+            "We have redesign Notepad"
+
+        ],
+        "critical": false
+      }
+    ],
+    "currentVersion": "1.2.0",
+    "minimumVersion": "1.0.0",
+    "lastChecked": "2025-04-16"
+  }
